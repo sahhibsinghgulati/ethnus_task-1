@@ -1,0 +1,18 @@
+.navbar {
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    text-align: center; /* Center align the links */
+    padding: 10px 0; /* Vertical and horizontal padding */
+}
+
+.navbar a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Vertical and horizontal padding */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.navbar a:hover {
+    background-color: #555; /* Background color on hover */
+    color: #ff6600; /* Text color on hover */
+}
