@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Task 4</title>
+</head>
+<body>
+    <div class="sidenav" id="mySidenav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="content" id="main">
+        <h1>Welcome to My Website</h1>
+        <p>This is a sample page with a left navigation bar.</p>
+    </div>
+
+    <div class="open-btn" onclick="toggleNav()">&#9776;</div>
+
+    <script>
+        function toggleNav() {
+            const sidenav = document.getElementById('mySidenav');
+            const content = document.getElementById('main');
+            const openBtn = document.querySelector('.open-btn');
+
+            if (sidenav.style.width === "250px") {
+                sidenav.style.width = "0";
+                content.style.marginLeft = "0";
+                openBtn.style.left = "20px";
+            } else {
+                sidenav.style.width = "250px";
+                content.style.marginLeft = "250px";
+                openBtn.style.left = "270px";
+            }
+        }
+    </script>
+</body>
+</html>
+
